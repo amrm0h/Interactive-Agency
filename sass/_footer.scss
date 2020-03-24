@@ -1,0 +1,47 @@
+footer {
+    padding: 30px 50px;
+    text-align: center;
+    line-height: 34px;
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    
+    p {
+        margin: 0;
+        font-size: 15px;
+        
+        i.fa-heart,
+        span {
+            color: red
+        }
+        
+        span {
+            font-size: 18px;
+            text-shadow:    1px 1px 1px rgba(255,255,255,0.2),
+                            1px 1px 1px rgba(255,255,255,0.7);
+        }
+        
+        i.fa-heart {
+            animation: heartbeat infinite 0.2s;
+        }
+        
+    }
+    
+    &.offer {
+        margin-top: 50px
+    }
+    
+    
+    @keyframes heartbeat {
+        
+        0% {
+            transform: scale(1)
+        }
+        
+        100% {
+            transform: scale(1.2)
+        }
+        
+    }
+    
+    
+}

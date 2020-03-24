@@ -1,0 +1,55 @@
+section.abo {
+    @extend .bg-cover;
+    text-align: center;
+    background-image: url(../images/aboutpic.jpg);
+    background-position: 0 50%;
+    
+    
+    h2 {
+        font-weight: bold;
+    }
+    
+    p {
+        width: 50%;
+        margin: 15px auto 80px;
+        color: #b5b5b5;
+    }
+    
+    div.over {
+        width: 100%;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, .9);
+        padding: 60px 0;
+        color: white;
+        
+        div.mem {
+            margin-bottom: 35px;
+            
+             img.img-thumbnail {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                padding: 4px;
+                background-color: transparent;
+            }
+            
+            h3 {
+                font-size: 21px;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+            
+            p {
+                margin: 12px auto 0;
+                width: 85%;
+            }
+        
+        
+        }
+        
+        button {
+            margin-top: 60px
+        }
+        
+    }
+}

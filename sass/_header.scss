@@ -1,0 +1,114 @@
+header {
+    @extend .bg-cover;
+    
+    background-image: url(../images/headerpic.jpg);
+    background-position: 0 56%;
+    text-align: center;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+    
+    
+    div.heading {
+        margin: 100px 0 190px;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 600
+        }
+
+        p {
+            color: #4a4848;
+            margin-bottom: 50px;
+        }
+    }
+
+    div.scrolldown {
+        color: white;
+        line-height: 19px;
+        animation: scrolldown infinite 1s  linear;
+        
+        
+        i {
+            cursor: pointer;
+        }
+
+        p {
+            color: #b9bbc0
+        }
+    }
+
+}
+nav.navbar.navbar-dark.bg-dark {
+    background-color: transparent;
+    padding: 20px 0;
+
+
+    a.navbar-brand {
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+        span {
+            font-weight: normal;
+            color: #5f5656
+        }
+    }
+
+    ul.navbar-nav li {
+
+        font-size: 13px;
+        padding: 3px 7px;
+        margin-right: 4px;
+        @include trans(color);
+
+        a.nav-link {
+            color: #696767;
+            padding: 1px 1px 0;
+            @include trans();
+
+
+            &:hover {
+                color: #000;
+            }
+        }
+
+        &.active {
+            border: .5px solid #696767;
+            border-radius: 30px;
+            a.nav-link {
+                color: #000;
+            }
+
+        } 
+    }
+}
+
+
+@keyframes scrolldown {
+        
+        0% {
+            transform: translateY(0)
+        }
+        
+        100% {
+            transform: translateY(6px)
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

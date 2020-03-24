@@ -1,0 +1,42 @@
+section.ser {
+    padding: 60px 0;
+    
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+    
+    div.do {
+        overflow: hidden;
+        margin-bottom: 40px;
+        
+        i,h3,p {
+            float: left;
+        }
+        
+        i {
+            display: inline-block;
+            font-size: 60px;
+            color: #9a9797;
+        }
+        
+        h3 {
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        p {
+            width: 75%;
+            margin: 13px 0 0 20px;
+            color: #b5b5b5;
+        }
+        
+    }
+    
+    button {
+        margin: 30px auto 0;
+        display: block;
+    }
+}

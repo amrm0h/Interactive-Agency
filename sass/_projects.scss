@@ -1,0 +1,86 @@
+section.pro {
+    
+    position: relative;
+    overflow: hidden;
+    
+    div.proj {
+        float: left;
+        width: 100%;
+        height: 449.666px;
+        @extend .bg-cover;
+        
+        &.proj1 {
+            background-image: url(../images/proj1.jpg);
+        }
+        &.proj2 {
+            background-image: url(../images/proj2.jpg);
+        }
+        &.proj3 {
+            background-image: url(../images/proj3.jpg);
+        }
+        
+        div.overlay {
+            color: white;
+            background-color: rgba(3, 2, 33, 0.6);
+            height: 100%;
+            text-align: center;
+            padding: 120px 80px;
+            opacity: 0;
+            @include trans();
+
+
+            h3 {
+                text-transform: uppercase;
+
+            }
+            p {
+                color: #cec3c3;
+                margin: 10px 0 41px;
+            }
+        }
+
+        &:hover div.overlay {
+            opacity: 1; 
+        }
+        
+    }
+    
+    
+    
+    .owl-item {
+        float: left;
+    }
+    
+    .owl-nav {
+        
+        button {
+            width: 44px;
+            height: 44px;
+            background: white;
+            color: black;
+            line-height: 0;
+            position: absolute;
+            top: 224.8px;
+            padding: 0;
+            
+            &.owl-prev {
+                left: 0;
+                border-radius: 0 50% 50% 0;
+            }
+            
+            &.owl-next {
+                right: 0;
+                border-radius:  50% 0 0 50%;
+            }
+            
+            span {
+                display: block;
+                margin: 0px 4px 3px 0;
+                font-size: 47px;
+                
+            }
+        }
+    }
+    
+    
+}

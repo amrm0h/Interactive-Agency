@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url("fonts/Roboto_Condensed/RobotoCondensed-Regular") format("ttff");
+       
+}
+
+* {
+    transition: all 0.5s ease-in-out
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,h2,h3,h4 {
+    margin: 0
+}
+
+button, button:active, button:focus {
+    outline: none
+}
+
+a, a:active, a:focus, a:visited {
+    outline: none
+}
+
+button:not(.navbar-toggler) {
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #702180;
+    background: -webkit-linear-gradient(to left, #ec0aa7, #702180);
+    background: linear-gradient(to left, #ec0aa7, #702180);
+    border: none;
+    color: white;
+    border-radius: 22px;
+    font-size: 13px;
+    font-weight: 500
+}
+
+p {
+    font-size: 12px
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+span.sty {
+    color: red !important;
+    transform: translateY(-7px);
+    display: inline-block;
+    margin-right: 3px;
+    font-weight: bold !important;
+    position: relative;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 88%;
+        left: 0;
+        width: 100%;
+        display: inline-block;
+        background-color: red;
+        height: 5px
+    }
+}
+
+
+
+// mixin for transition 
+
+
+@mixin trans($prop:all, $time: 0.3s, $ease: linear) {
+    
+    transition: $prop $time $ease
+    
+}
+
+
+
+
+
+
+
+
+
+
+
